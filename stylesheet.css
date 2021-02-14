@@ -8,7 +8,7 @@ html, body {
   text-align: center;
 }
 
-body {
+.top {
   position: relative;
 }
 
@@ -53,5 +53,24 @@ body {
   height: 100vh;
   background-image: url(img/book-shelf.jpg);
   background-size: cover;
+}
+
+.top-message {
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.top-image h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.top-image h2 {
+  color: white;
+  margin: 0;
 }
 /*# sourceMappingURL=stylesheet.css.map */
