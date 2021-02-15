@@ -1,0 +1,79 @@
+$font-color: white;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+    // color: black;
+    // font-family: 
+    margin: 0px;
+    text-align: center;
+}
+
+.top {
+  position:relative;
+}
+
+// ヘッダー
+.header-wrapper{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top:0;
+}
+
+.logo{
+  width: 180px;
+  margin-right: auto;
+  padding-left: 10px;
+}
+
+.logo a {
+  text-decoration: none;
+  color:$font-color;
+}
+
+.header-wrapper ul{
+  float: right;
+  margin-right: 30px;
+  line-height: 56px;
+}
+.header-wrapper ul a{
+  text-decoration: none;
+  color:$font-color;
+}
+
+.header-wrapper li{
+  display: inline;
+  padding-left:40px;
+  
+}
+
+// トップイメージ
+.top-image {
+  width:100vw;
+  height:100vh;
+  background-image: url(img/book-shelf.jpg);
+  background-size: cover;
+}
+
+.top-message {
+  position:absolute;
+  top:50vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.top-image h1{
+  color:$font-color;
+  font-size: 3rem;
+  margin: 0;
+  
+}
+
+.top-image h2 {
+  color:$font-color;
+  margin: 0;
+}
