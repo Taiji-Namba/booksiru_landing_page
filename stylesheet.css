@@ -30,7 +30,6 @@ html, body {
 .header-wrapper .logo a {
   text-decoration: none;
   color: white;
-  cursor: pointer;
 }
 
 .header-wrapper ul {
@@ -47,6 +46,7 @@ html, body {
 .header-wrapper ul li a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .login-modal-wrapper, .signup-modal-wrapper {
