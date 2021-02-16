@@ -30,6 +30,7 @@ html, body {
 .header-wrapper .logo a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .header-wrapper ul {
