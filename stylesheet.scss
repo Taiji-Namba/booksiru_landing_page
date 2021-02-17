@@ -73,6 +73,11 @@ html, body{
   width: 530px;
   height: auto;
   text-align: center;
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .terms-of-service {
@@ -109,7 +114,7 @@ html, body{
 
 #submit-btn {
   display: inline-block;
-  padding: 14px 140px;
+  padding: 14px 15%;
   background-color: #5dca88;
   border: none;
   border-radius: 3px;
