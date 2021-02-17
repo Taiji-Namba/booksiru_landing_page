@@ -64,19 +64,19 @@ html, body {
   position: absolute;
   top: 20%;
   left: 34%;
-  background-color: #e6ecf0;
-  padding: 20px 0 40px;
-  border-radius: 10px;
-  width: 450px;
+  background-color: #ffffff;
+  padding: 20px 50px 40px;
+  border-radius: 5px;
+  width: 530px;
   height: auto;
   text-align: center;
 }
 
-.fa-times {
+.close-icon {
   position: absolute;
   top: 12px;
   right: 12px;
-  color: rgba(128, 128, 128, 0.46);
+  width: 4%;
   cursor: pointer;
 }
 
