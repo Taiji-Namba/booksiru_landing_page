@@ -21,13 +21,13 @@ html, body {
   top: 0;
 }
 
-.logo {
+.header-wrapper .logo {
   width: 180px;
   margin-right: auto;
   padding-left: 10px;
 }
 
-.logo a {
+.header-wrapper .logo a {
   text-decoration: none;
   color: white;
 }
@@ -38,14 +38,90 @@ html, body {
   line-height: 56px;
 }
 
-.header-wrapper ul a {
-  text-decoration: none;
-  color: white;
-}
-
-.header-wrapper li {
+.header-wrapper ul li {
   display: inline;
   padding-left: 40px;
+}
+
+.header-wrapper ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.login-modal-wrapper, .signup-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #ffffff;
+  padding: 20px 50px 40px;
+  border-radius: 5px;
+  width: 530px;
+  height: auto;
+  text-align: center;
+}
+
+.modal form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.modal .bold {
+  font-weight: bold;
+}
+
+.terms-of-service {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.close-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 4%;
+  cursor: pointer;
+}
+
+#signup-form, #login-form {
+  width: 100%;
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input, #login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 15%;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
 }
 
 .top-image {
@@ -53,14 +129,6 @@ html, body {
   height: 100vh;
   background-image: url(img/book-shelf.jpg);
   background-size: cover;
-}
-
-.top-message {
-  position: absolute;
-  top: 50vh;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 .top-image h1 {
@@ -72,5 +140,13 @@ html, body {
 .top-image h2 {
   color: white;
   margin: 0;
+}
+
+.top-message {
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 /*# sourceMappingURL=stylesheet.css.map */

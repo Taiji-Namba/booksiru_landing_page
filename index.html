@@ -6,6 +6,7 @@
   <title>Booksiru::もう新刊の発売日を忘れない</title>
   <link rel="stylesheet" href="stylesheet.css" />
   <link rel="stylesheet" href="responsive.css" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
 </head>
 
@@ -16,20 +17,62 @@
       <div class="header-wrapper">
         <h1 class = "logo"><a href="#" alt="BookSiruロゴ">BookSiru</a></h1>
         <ul>
-          <li><a href="#">無料登録はこちら</a></li>
-          <li><a href="#">ログイン</a></li>
+            <li><a class = "js-signup-show">無料登録はこちら</a></li>
+            <li><a id = "login-show">ログイン</a></li>
         </ul>
       </div>
+    </nav>
 
-      <!-- トップイメージ -->
-      <div class="top-image">
-        <div class="top-message">
-          <h1>もう新刊の発売日を忘れない</h1>
-          <h2>発売3日前にお知らせ</h2>
+    <!-- 新規登録モーダル -->
+    <div class="signup-modal-wrapper" id = "signup-modal">
+      <div class="modal">
+
+        <!-- 閉じるボタン -->
+        <div class="close-modal">
+          <img class = "close-icon" src="img/close-icon.png">
+        </div>
+
+        <!-- 新規登録フォーム -->
+        <div id="signup-form">
+          <h2>メールアドレスを登録</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <p>以下の<span class = "bold">同意して登録する</span>を選択することで<a class = "terms-of-service" href="#">BookSiruの利用規約</a>に同意します</p>
+            <div id = "submit-btn">同意して登録する</div>
+          </form>
         </div>
       </div>
-    </nav>
+    </div>
+
+    <!-- ログインモーダル -->
+    <div class="login-modal-wrapper" id="login-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <img class="close-icon" src="img/close-icon.png">
+        </div>
+
+        <!-- ログインフォーム -->
+        <div id="login-form">
+          <h2>ログイン</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div id = "submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </header>
+
+  <!-- トップイメージ -->
+  <div class="top-image">
+    <div class="top-message">
+      <h1>もう新刊の発売日を忘れない</h1>
+      <h2>発売3日前にお知らせ</h2>
+    </div>
+  </div>
 
 <body>
 
