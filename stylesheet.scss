@@ -1,4 +1,5 @@
 $font-color: white;
+$main-color:#2cbae7;
 
 * {
   box-sizing: border-box;
@@ -29,7 +30,7 @@ html, body{
 
     a {
       text-decoration: none;
-      color:$font-color;
+      color:$main-color;
     }
   }
 
@@ -44,7 +45,7 @@ html, body{
 
       a{
       text-decoration: none;
-      color:$font-color;
+      color:$main-color;
       cursor: pointer;
       }
     }
@@ -131,18 +132,20 @@ html, body{
 .top-image {
   width:100vw;
   height:100vh;
-  background-image: url(img/book-shelf.jpg);
+  background-image: url(img/top-image.jpg);
   background-size: cover;
 
   h1{
-    color:$font-color;
+    color:$main-color;
     font-size: 3rem;
     margin: 0;
+    // background-color: rgba($color: white, $alpha: 0.5);
   }
 
   h2 {
-    color:$font-color;
+    color:$main-color;
     margin: 0;
+    // background-color: rgba($color: white, $alpha: 0.5);
   }
 }
 

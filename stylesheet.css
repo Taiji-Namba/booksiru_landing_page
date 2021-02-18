@@ -29,7 +29,7 @@ html, body {
 
 .header-wrapper .logo a {
   text-decoration: none;
-  color: white;
+  color: #2cbae7;
 }
 
 .header-wrapper ul {
@@ -45,7 +45,7 @@ html, body {
 
 .header-wrapper ul li a {
   text-decoration: none;
-  color: white;
+  color: #2cbae7;
   cursor: pointer;
 }
 
@@ -127,18 +127,18 @@ html, body {
 .top-image {
   width: 100vw;
   height: 100vh;
-  background-image: url(img/book-shelf.jpg);
+  background-image: url(img/top-image.jpg);
   background-size: cover;
 }
 
 .top-image h1 {
-  color: white;
+  color: #2cbae7;
   font-size: 3rem;
   margin: 0;
 }
 
 .top-image h2 {
-  color: white;
+  color: #2cbae7;
   margin: 0;
 }
 
