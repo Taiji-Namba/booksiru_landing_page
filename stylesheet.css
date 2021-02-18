@@ -47,6 +47,7 @@ html, body {
   text-decoration: none;
   color: #2cbae7;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .login-modal-wrapper, .signup-modal-wrapper {
