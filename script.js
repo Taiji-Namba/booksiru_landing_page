@@ -14,7 +14,7 @@ $(function() {
   });
 
   // カルーセルメニュー
-  let mySwiper = new Swiper('.swiper-container', {
+  const mySwiper = new Swiper('.swiper-container', {
     autoplay: {
       delay: 0,
     },

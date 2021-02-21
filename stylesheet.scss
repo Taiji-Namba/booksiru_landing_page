@@ -10,6 +10,7 @@ html, body{
     // font-family:
     margin: 0px;
     text-align: center;
+    background-color: #F6FBFF;
 }
 
 main {
@@ -163,3 +164,46 @@ main {
 }
 
 // サービス紹介
+.service-intro {
+  margin: 80px 0;
+}
+
+.service-intro-container {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+
+  &__text {
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 0 3%;
+    text-align: left;
+
+    h2 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+  }
+
+  &__image {
+    width: 30%;
+    // height: 30%;
+  }
+
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+#img2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/service-image2.jpg);
+  background-size: cover;
+}
