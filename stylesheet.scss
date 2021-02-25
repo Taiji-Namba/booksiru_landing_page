@@ -184,6 +184,7 @@ main {
       text-align: left;
 
       h2,p {
+        margin-top:0;
         display: inline-block;
         text-align: left;
       }
@@ -193,7 +194,7 @@ main {
     &--right {
       text-align: right;
 
-      h2 {
+      h2,p {
         margin-top:0;
       }
     }
