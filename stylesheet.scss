@@ -1,5 +1,5 @@
-$font-color: white;
 $main-color:#2cbae7;
+$text-color:#5b5b5b;
 
 * {
   box-sizing: border-box;
@@ -179,6 +179,7 @@ main {
     width: 50%;
     font-size: 1.5rem;
     padding: 0;
+    color:$font-color;
 
     &--left {
       text-align: left;
