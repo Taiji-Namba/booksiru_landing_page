@@ -161,7 +161,7 @@ main {
   margin: auto;
 }
 
-.service-intro {
+.wrapper {
   margin: 50px 0;
 }
 
@@ -179,7 +179,6 @@ main {
 
 .service-intro-container__text {
   width: 50%;
-  font-size: 1.5rem;
   padding: 0;
 }
 
@@ -192,6 +191,7 @@ main {
   margin-left: -1%;
   display: inline-block;
   text-align: left;
+  font-size: 2.5rem;
 }
 
 .service-intro-container__text--left p {
@@ -199,6 +199,7 @@ main {
   margin-left: -0.5%;
   display: inline-block;
   text-align: left;
+  font-size: 1.5rem;
 }
 
 .service-intro-container__text--right {
@@ -207,10 +208,12 @@ main {
 
 .service-intro-container__text--right h2 {
   margin-top: -10px;
+  font-size: 2.5rem;
 }
 
 .service-intro-container__text--right p {
   margin-top: 0;
+  font-size: 1.5rem;
 }
 
 .service-intro-container__image {
@@ -235,11 +238,11 @@ main {
      object-fit: cover;
 }
 
-.faq {
+.wrapper {
   margin: 50px 0;
 }
 
-.faq h2 {
-  font-size: 3rem;
+.faq-container h2 {
+  font-size: 2.5rem;
 }
 /*# sourceMappingURL=stylesheet.css.map */
