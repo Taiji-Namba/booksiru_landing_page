@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="responsive.css" />
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+
 </head>
 
 <body>
@@ -66,15 +67,77 @@
     </div>
   </header>
 
-  <!-- トップイメージ -->
-  <section class="top-image">
-    <div class="top-message">
-      <h1>あなたのための本をお届け</h1>
-      <h2>独自AIがあなたにとって最適な本を選びます</h2>
-    </div>
-  </section>
+  <main>
+    <!-- トップイメージ -->
+    <section class="top-image">
+      <div class="top-message">
+        <h1>あなたのための本をお届け</h1>
+        <h2>独自AIがあなたにとって最適な本を選びます</h2>
+      </div>
+    </section>
+
+    <!-- サービス紹介 -->
+    <section>
+      <div class="service-intro">
+        <!-- 紹介1 -->
+        <div class="service-intro-container">
+          <div class = "service-intro-container__text">
+            <div class="service-intro-container__text--left">
+              <h2>新たな読書体験を</h2>
+              <p>「何を読めばいいかわからない」<br>
+                「まだ知らない良書と出会いたい」<br>
+                YourBooks独自AIがそんなあなたにぴったりの1冊を選びます
+              </p>
+            </div>
+          </div>
+          <div class="service-intro-container__image" id = "img1">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/santai.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/kimetsu.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/stress-zero.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/onisoku.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/karyu.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-intro-container">
+          <div class="service-intro-container__image">
+            <img src="img/service-image2.jpg" alt="イメージ2" class = "service-intro-container__image--picture">
+          </div>
+          <div class="service-intro-container__text">
+            <div class="service-intro-container__text--right">
+              <h2>毎月の楽しみに</h2>
+              <p>毎月お好きな数の本を自宅にお届け<br>
+                「まだ知らない良書と出会いたい」<br>
+                そんなあなたに
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-intro-container">
+          <div class="service-intro-container__text">
+            <div class="service-intro-container__text--left">
+              <h2>すぐに始められる</h2>
+              <p>無料の簡単なアンケートに答えるだけ<br>
+                3分で完了します
+              </p>
+            </div>
+          </div>
+          <div class="service-intro-container__image">
+            <img src="img/service-image3.jpg" alt="イメージ3" class = "service-intro-container__image--picture">
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
