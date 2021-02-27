@@ -184,10 +184,10 @@ main {
       text-align: left;
 
       h2 {
-        margin-top:0;
+        margin-top:-10px;
+        margin-left: -1%;
         display: inline-block;
         text-align: left;
-        margin-left: -1%;
       }
 
       p {
@@ -202,7 +202,10 @@ main {
     &--right {
       text-align: right;
 
-      h2,p {
+      h2 {
+        margin-top:-10px;
+      }
+      p {
         margin-top:0;
       }
     }

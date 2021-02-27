@@ -183,10 +183,10 @@ main {
 }
 
 .service-intro-container__text--left h2 {
-  margin-top: 0;
+  margin-top: -10px;
+  margin-left: -1%;
   display: inline-block;
   text-align: left;
-  margin-left: -1%;
 }
 
 .service-intro-container__text--left p {
@@ -200,7 +200,11 @@ main {
   text-align: right;
 }
 
-.service-intro-container__text--right h2, .service-intro-container__text--right p {
+.service-intro-container__text--right h2 {
+  margin-top: -10px;
+}
+
+.service-intro-container__text--right p {
   margin-top: 0;
 }
 
