@@ -22,4 +22,21 @@ $(function() {
     speed: 10000,
   });
 
+  // アコーディオンメニュー
+  $('.faq-list__item').on('click', function () {
+    let $answer = $(this).find('.faq-answer');
+    let $svg = $(this).find('svg');
+
+    if ($answer.hasClass('open')) {
+      $answer.removeClass('open');
+      $answer.slideUp();
+      $svg.removeClass('svg-closed');
+      $svg.addClass('svg-open');
+    } else {
+      $answer.addClass('open');
+      $answer.slideDown();
+      $svg.removeClass('svg-open');
+      $svg.addClass('svg-closed');
+    }
+  });
 });
