@@ -115,16 +115,17 @@ main {
 #signup-form,
 #login-form {
   width: 100%;
+  font-size: 1.6rem;
 
   h2 {
     letter-spacing: 1px;
     margin-bottom: 40px;
+    font-size: 2.4rem;
   }
 
   input {
     width: 320px;
     margin-bottom: 20px;
-    font-size: 1.2rem;
     padding: 12px 12px;
     border: 1px solid #d0d5d8;
     border-radius: 5px;
@@ -257,12 +258,17 @@ main {
 
   h2 {
     font-size: 4rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 2.0rem;
   }
 
 }
 
 .faq-list {
-  margin: 1.25em auto;
+  margin: .25em auto;
   max-width: 815px;
   padding-left: 0;
 
@@ -336,7 +342,7 @@ button.btn {
 
 a.btn-flat {
   overflow: hidden;
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 11rem;
   color: #fff;
   border-radius: .25rem;
   background: #fc9d9d;
@@ -344,6 +350,7 @@ a.btn-flat {
 
   span {
     position: relative;
+    font-size: 2rem;
   }
 
   &::before {
