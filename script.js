@@ -30,13 +30,13 @@ $(function() {
     if ($answer.hasClass('open')) {
       $answer.removeClass('open');
       $answer.slideUp();
-      $svg.removeClass('svg-closed');
-      $svg.addClass('svg-open');
+      $svg.removeClass('svg-open');
+      $svg.addClass('svg-closed');
     } else {
       $answer.addClass('open');
       $answer.slideDown();
-      $svg.removeClass('svg-open');
-      $svg.addClass('svg-closed');
+      $svg.removeClass('svg-closed');
+      $svg.addClass('svg-open');
     }
   });
 });
