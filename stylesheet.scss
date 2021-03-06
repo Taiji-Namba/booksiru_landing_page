@@ -1,5 +1,6 @@
 $main-color: #2cbae7;
 $text-color: #5b5b5b;
+$register-color: #fc9d9d;
 
 *,
 *:before,
@@ -141,7 +142,7 @@ main {
 #submit-btn {
   display: inline-block;
   padding: 14px 15%;
-  background-color: #5dca88;
+  background-color: $register-color;
   border: none;
   border-radius: 3px;
   color: white;
@@ -351,7 +352,7 @@ a.btn-flat {
   padding: 1.5rem 11rem;
   color: #fff;
   border-radius: .25rem;
-  background: #fc9d9d;
+  background: $register-color;
   position:relative;
 
   span {
@@ -363,7 +364,7 @@ a.btn-flat {
     position: absolute;
     top: 0;
     left: 0.3vh;
-    width: 120%;
+  width: 120%;
     height: 500%;
     content: '';
     -webkit-transition: all .5s ease-in-out;
