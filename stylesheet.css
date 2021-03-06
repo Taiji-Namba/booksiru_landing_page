@@ -63,16 +63,21 @@ main {
   font-weight: bold;
 }
 
-.login-modal-wrapper,
-.signup-modal-wrapper {
+.modal-wrapper {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 100;
   display: none;
+}
+
+.modal-wrapper__bg {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
 }
 
 .modal {
@@ -134,7 +139,7 @@ main {
 #submit-btn {
   display: inline-block;
   padding: 14px 15%;
-  background-color: #5dca88;
+  background-color: #fc9d9d;
   border: none;
   border-radius: 3px;
   color: white;

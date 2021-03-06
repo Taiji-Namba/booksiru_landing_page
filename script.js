@@ -8,7 +8,7 @@ $(function() {
     $('#login-modal').fadeIn();
   });
 
-  $('.close-modal').click(function(){
+  $('.js-modal-close').click(function(){
     $('#login-modal').fadeOut();
     $('#signup-modal').fadeOut();
   });
