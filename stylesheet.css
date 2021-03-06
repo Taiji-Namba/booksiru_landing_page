@@ -351,6 +351,7 @@ a.btn-flat {
   border-radius: .25rem;
   background: #fc9d9d;
   position: relative;
+  text-decoration: none;
 }
 
 a.btn-flat span {
