@@ -390,4 +390,29 @@ footer {
   font-size: 1.4rem;
   margin: 80px 0 10px 0;
 }
+
+footer .footer-nav {
+  margin-bottom: 15px;
+}
+
+footer .footer-nav li {
+  display: inline-block;
+  font-size: 1.4rem;
+  letter-spacing: .08em;
+  list-style: none;
+}
+
+footer .footer-nav li a {
+  text-decoration: none;
+  color: #5b5b5b;
+}
+
+footer .footer-nav li a::after {
+  content: "|";
+  margin: 0 1.8rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
 /*# sourceMappingURL=stylesheet.css.map */
