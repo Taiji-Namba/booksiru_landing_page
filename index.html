@@ -1,210 +1,273 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YourBooks::あなたのための本をお届けします</title>
-  <link rel="stylesheet" href="modern-css-reset.css" />
-  <link rel="stylesheet" href="stylesheet.css" />
-  <link rel="stylesheet" href="responsive.css" />
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourBooks::あなたのための本をお届けします</title>
+    <link rel="stylesheet" href="modern-css-reset.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-  <!-- ヘッダー -->
-  <header>
-    <!-- ナビバー -->
-    <nav class="top">
-      <div class="header-wrapper">
-        <h1 class = "logo"><a href="#" alt="BookSiruロゴ">YourBooks</a></h1>
-        <ul>
-            <li><a class = "js-signup-show">診断してみる</a></li>
-            <li><a id = "login-show">ログイン</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- 新規登録モーダル -->
-    <div class="modal-wrapper" id = "signup-modal">
-      <div class="modal-wrapper__bg js-modal-close"></div>
-      <div class="modal">
-        <!-- 閉じるボタン -->
-        <div class="js-modal-close">
-          <img class = "close-icon" src="img/close-icon.png">
-        </div>
-
-        <!-- 新規登録フォーム -->
-        <div id="signup-form">
-          <h2>無料で会員登録</h2>
-          <form action="#">
-            <input class="form-control" type="text" placeholder="メールアドレス">
-            <input class="form-control" type="password" placeholder="パスワード">
-            <p>以下の<span class = "bold">同意して登録する</span>を選択することで<a class = "terms-of-service" href="#">YourBooksの利用規約</a>に同意します</p>
-            <div id = "submit-btn">同意して登録する</div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <!-- ログインモーダル -->
-    <div class="modal-wrapper" id="login-modal">
-      <div class="modal-wrapper__bg js-modal-close"></div>
-      <div class="modal">
-        <div class="js-modal-close">
-          <img class="close-icon" src="img/close-icon.png">
-        </div>
-
-        <!-- ログインフォーム -->
-        <div id="login-form">
-          <h2>ログイン</h2>
-          <form action="#">
-            <input class="form-control" type="text" placeholder="メールアドレス">
-            <input class="form-control" type="password" placeholder="パスワード">
-            <div id = "submit-btn">ログイン</div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- トップイメージ -->
-    <section class="top-image">
-      <div class="top-message">
-        <h1>あなたのための本をお届け</h1>
-        <h2>独自AIがあなたにとって最適な本を選びます</h2>
-      </div>
-    </section>
-
-    <!-- サービス紹介 -->
-    <section>
-      <div class="wrapper">
-        <!-- 紹介1 -->
-        <div class="service-intro-container">
-          <div class = "service-intro-container__text">
-            <div class="service-intro-container__text--left">
-              <h2>新たな読書体験を</h2>
-              <p>「何を読めばいいかわからない」<br>
-                「まだ知らない良書と出会いたい」<br>
-                YourBooks独自AIがそんなあなたにぴったりの1冊を選びます
-              </p>
-            </div>
-          </div>
-          <div class="service-intro-container__image" id = "img1">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/santai.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/kimetsu.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/surasura.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/onisoku.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="img/karyu.jpg" alt=""></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-intro-container">
-          <div class="service-intro-container__image">
-            <img src="img/service-image2.jpg" alt="イメージ2" class = "service-intro-container__image--picture">
-          </div>
-          <div class="service-intro-container__text">
-            <div class="service-intro-container__text--right">
-              <h2>毎月の楽しみに</h2>
-              <p>毎月お好きな数の本を自宅にお届け<br>
-                「まだ知らない良書と出会いたい」<br>
-                そんなあなたに
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="service-intro-container">
-          <div class="service-intro-container__text">
-            <div class="service-intro-container__text--left">
-              <h2>すぐに始められる</h2>
-              <p>無料の簡単なアンケートに答えるだけ<br>
-                3分で完了します
-              </p>
-            </div>
-          </div>
-          <div class="service-intro-container__image">
-            <img src="img/service-image3.jpg" alt="イメージ3" class = "service-intro-container__image--picture">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- よくある質問 -->
-    <section>
-      <div class="wrapper">
-        <div class="faq-container">
-          <h2>よくある質問</h2>
-
-          <ul class = "faq-list">
-            <li class="faq-list__item">
-              <button class="faq-question js-faq-question">
-                利用料金は？
-                <svg viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
-                  <path
-                    d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
-                  </path>
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>月1冊-10冊までお好きなコースを選べます。<br>
-                  お届けする本の価格によって料金が変化します。<br>
-                  1冊あたりの平均は1024円です。
-                </p>
-              </div>
-            </li>
-
-            <li class="faq-list__item">
-              <button class="faq-question js-faq-question">
-                ジャンルは？
-                <svg viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
-                  <path
-                    d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
-                  </path>
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>漫画や小説、ライトノベル、ビジネス書からエッセイまで様々。<br>
-                  もちろんジャンルの組み合わせは自由です。
-                </p>
-              </div>
-            </li>
-
-            <li class="faq-list__item">
-              <button class="faq-question js-faq-question">
-                送料は？
-                <svg viewbox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
-                  <path
-                  d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z">
-                  </path>
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>月4冊コース以上なら無料です。<br>
-                月3冊以下のコースでは330円の送料がかかります。
-                </p>
-              </div>
-            </li>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <!-- ナビバー -->
+      <nav class="top">
+        <div class="header-wrapper">
+          <h1 class="logo"><a href="#" alt="BookSiruロゴ">YourBooks</a></h1>
+          <ul>
+            <li><a class="js-signup-show">診断してみる</a></li>
+            <li><a id="login-show">ログイン</a></li>
           </ul>
         </div>
+      </nav>
+
+      <!-- 新規登録モーダル -->
+      <div class="modal-wrapper" id="signup-modal">
+        <div class="modal-wrapper__bg js-modal-close"></div>
+        <div class="modal">
+          <!-- 閉じるボタン -->
+          <div class="js-modal-close">
+            <img class="close-icon" src="img/close-icon.png" />
+          </div>
+
+          <!-- 新規登録フォーム -->
+          <div id="signup-form">
+            <h2>無料で会員登録</h2>
+            <form action="#">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="メールアドレス"
+              />
+              <input
+                class="form-control"
+                type="password"
+                placeholder="パスワード"
+              />
+              <p>
+                以下の<span class="bold">同意して登録する</span
+                >を選択することで<a class="terms-of-service" href="#"
+                  >YourBooksの利用規約</a
+                >に同意します
+              </p>
+              <div class="submit-btn">同意して登録する</div>
+            </form>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <!-- 診断ボタン -->
-    <div class = "wrapper" style="margin-top: 80px;">
-      <a class = "btn btn-flat js-signup-show"><span>まずは診断を受けてみる</span></a>
-    </div>
-  </main>
+      <!-- ログインモーダル -->
+      <div class="modal-wrapper" id="login-modal">
+        <div class="modal-wrapper__bg js-modal-close"></div>
+        <div class="modal">
+          <div class="js-modal-close">
+            <img class="close-icon" src="img/close-icon.png" />
+          </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
-  <script src="script.js"></script>
-</body>
+          <!-- ログインフォーム -->
+          <div id="login-form">
+            <h2>ログイン</h2>
+            <form action="#">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="メールアドレス"
+              />
+              <input
+                class="form-control"
+                type="password"
+                placeholder="パスワード"
+              />
+              <div class="submit-btn">ログイン</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- トップイメージ -->
+      <section class="top-image">
+        <div class="top-message">
+          <h1>あなたのための本をお届け</h1>
+          <h2>独自AIがあなたにとって最適な本を選びます</h2>
+        </div>
+      </section>
+
+      <!-- サービス紹介 -->
+      <section>
+        <div class="wrapper">
+          <!-- 紹介1 -->
+          <div class="service-intro-container">
+            <div class="service-intro-container__text">
+              <div class="service-intro-container__text--left">
+                <h2>新たな読書体験を</h2>
+                <p>
+                  「何を読めばいいかわからない」<br />
+                  「まだ知らない良書と出会いたい」<br />
+                  YourBooks独自AIがそんなあなたにぴったりの1冊を選びます
+                </p>
+              </div>
+            </div>
+            <div class="service-intro-container__image" id="img1">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/santai.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/kimetsu.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/surasura.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/onisoku.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/karyu.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-intro-container">
+            <div class="service-intro-container__image">
+              <img
+                src="img/service-image2.jpg"
+                alt="イメージ2"
+                class="service-intro-container__image--picture"
+              />
+            </div>
+            <div class="service-intro-container__text">
+              <div class="service-intro-container__text--right">
+                <h2>毎月の楽しみに</h2>
+                <p>
+                  毎月お好きな数の本を自宅にお届け<br />
+                  「まだ知らない良書と出会いたい」<br />
+                  そんなあなたに
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-intro-container">
+            <div class="service-intro-container__text">
+              <div class="service-intro-container__text--left">
+                <h2>すぐに始められる</h2>
+                <p>
+                  無料の簡単なアンケートに答えるだけ<br />
+                  3分で完了します
+                </p>
+              </div>
+            </div>
+            <div class="service-intro-container__image">
+              <img
+                src="img/service-image3.jpg"
+                alt="イメージ3"
+                class="service-intro-container__image--picture"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- よくある質問 -->
+      <section>
+        <div class="wrapper">
+          <div class="faq-container">
+            <h2>よくある質問</h2>
+
+            <ul class="faq-list">
+              <li class="faq-list__item">
+                <button class="faq-question js-faq-question">
+                  利用料金は？
+                  <svg
+                    viewbox="0 0 26 26"
+                    class="svg-icon svg-icon-thin-x svg-closed"
+                    focusable="true"
+                  >
+                    <path
+                      d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    月1冊-10冊までお好きなコースを選べます。<br />
+                    お届けする本の価格によって料金が変化します。<br />
+                    1冊あたりの平均は1024円です。
+                  </p>
+                </div>
+              </li>
+
+              <li class="faq-list__item">
+                <button class="faq-question js-faq-question">
+                  ジャンルは？
+                  <svg
+                    viewbox="0 0 26 26"
+                    class="svg-icon svg-icon-thin-x svg-closed"
+                    focusable="true"
+                  >
+                    <path
+                      d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    漫画や小説、ライトノベル、ビジネス書からエッセイまで様々。<br />
+                    もちろんジャンルの組み合わせは自由です。
+                  </p>
+                </div>
+              </li>
+
+              <li class="faq-list__item">
+                <button class="faq-question js-faq-question">
+                  送料は？
+                  <svg
+                    viewbox="0 0 26 26"
+                    class="svg-icon svg-icon-thin-x svg-closed"
+                    focusable="true"
+                  >
+                    <path
+                      d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    月4冊コース以上なら無料です。<br />
+                    月3冊以下のコースでは330円の送料がかかります。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 診断ボタン -->
+      <div class="wrapper" style="margin-top: 80px">
+        <a class="btn btn-flat js-signup-show"
+          ><span>まずは診断を受けてみる</span></a
+        >
+      </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
