@@ -136,7 +136,7 @@ main {
   border-radius: 5px;
 }
 
-#submit-btn {
+.submit-btn {
   display: inline-block;
   padding: 14px 15%;
   background-color: #fc9d9d;
