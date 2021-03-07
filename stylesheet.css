@@ -181,7 +181,7 @@ main {
 .service-intro-container {
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 90px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
