@@ -13,13 +13,15 @@ $(function() {
     $('#signup-modal').fadeOut();
   });
 
-  // カルーセルメニュー
-  const mySwiper = new Swiper('.swiper-container', {
+  // スライダーメニュー
+  let mySwiper = new Swiper('.swiper-container', {
     autoplay: {
       delay: 0,
     },
     loop: true,
     speed: 10000,
+    slidesPerView:1.5,
+    centeredSlides: true
   });
 
   // アコーディオンメニュー
