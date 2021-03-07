@@ -3,8 +3,8 @@ $text-color: #5b5b5b;
 $register-color: #fc9d9d;
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
