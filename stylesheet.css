@@ -36,7 +36,7 @@ main {
   width: 180px;
   margin: 10px auto 10px 10px;
   font-size: 2.4rem;
-  line-height: 56px;
+  line-height: 5.6rem;
 }
 
 .header-wrapper .logo a {
@@ -47,7 +47,7 @@ main {
 .header-wrapper ul {
   float: right;
   margin-right: 30px;
-  line-height: 56px;
+  line-height: 5.6rem;
 }
 
 .header-wrapper ul li {
