@@ -181,22 +181,23 @@ main {
 .service-intro-container {
   width: 90%;
   max-width: 1000px;
+  margin: 0 auto 80px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto 80px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.service-intro-container__text {
-  width: 50%;
-  padding: 0;
-}
-
 .service-intro-container__text--left {
   text-align: left;
+  width: 50%;
 }
 
 .service-intro-container__text--left h2 {
@@ -215,8 +216,15 @@ main {
   font-size: 2.4rem;
 }
 
+.service-intro-container__text--left span.beginning-is-key-bracket {
+  display: block;
+  margin-left: -1.4rem;
+}
+
 .service-intro-container__text--right {
-  text-align: right;
+  width: 48rem;
+  text-align: left;
+  margin-right: -1rem;
 }
 
 .service-intro-container__text--right h2 {

@@ -188,46 +188,50 @@ main {
 .service-intro-container {
   width: 90%;
   max-width: 1000px;
-  display: flex;
   margin: 0 auto 80px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
 
-  &__text {
+  &__text--left {
+    text-align: left;
     width: 50%;
 
-    padding: 0;
-
-    &--left {
+    h2 {
+      margin-top: -10px;
+      margin-left: -1%;
+      display: inline-block;
       text-align: left;
-
-      h2 {
-        margin-top: -10px;
-        margin-left: -1%;
-        display: inline-block;
-        text-align: left;
-        font-size: 4rem;
-      }
-
-      p {
-        margin-top: 0;
-        margin-left: -0.5%;
-        display: inline-block;
-        text-align: left;
-        font-size: 2.4rem;
-      }
+      font-size: 4rem;
     }
 
-    &--right {
-      text-align: right;
+    p {
+      margin-top: 0;
+      margin-left: -0.5%;
+      display: inline-block;
+      text-align: left;
+      font-size: 2.4rem;
+    }
 
-      h2 {
-        margin-top: -10px;
-        font-size: 4rem;
-      }
-      p {
-        margin-top: 0;
-        font-size: 2.4rem;
-      }
+    span.beginning-is-key-bracket {
+      display: block;
+      margin-left: -1.4rem;
+    }
+  }
+
+  &__text--right {
+    width: 48rem;
+    text-align: left;
+    margin-right: -1rem;
+
+    h2 {
+      margin-top: -10px;
+      font-size: 4rem;
+    }
+    p {
+      margin-top: 0;
+      font-size: 2.4rem;
     }
   }
 
