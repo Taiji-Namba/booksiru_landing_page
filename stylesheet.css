@@ -385,4 +385,9 @@ a.btn-flat:hover::before {
   -webkit-transform: translateX(-8%) translateY(-25%) rotate(135deg);
   transform: translateX(-8%) translateY(-25%) rotate(135deg);
 }
+
+footer {
+  font-size: 1.4rem;
+  margin: 80px 0 10px 0;
+}
 /*# sourceMappingURL=stylesheet.css.map */
