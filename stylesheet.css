@@ -56,6 +56,10 @@ main {
   font-size: 1.6rem;
 }
 
+.header-wrapper ul li .signup {
+  color: #fc9d9d;
+}
+
 .header-wrapper ul li a {
   text-decoration: none;
   color: #2cbae7;
