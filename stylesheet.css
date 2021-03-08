@@ -247,11 +247,10 @@ main {
 
 .service-intro-container__image#img1 .swiper-slide {
   width: auto;
-  height: 300px;
+  height: 30%;
 }
 
 .service-intro-container__image#img1 .swiper-slide img {
-  height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
 }

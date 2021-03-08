@@ -20,8 +20,9 @@ $(function() {
     },
     loop: true,
     speed: 10000,
-    slidesPerView:1.9,
-    centeredSlides: true
+    slidesPerView:1.8,
+    centeredSlides: true,
+    centeredSlidesBounds: true
   });
 
   // アコーディオンメニュー
