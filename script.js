@@ -20,7 +20,7 @@ $(function() {
     },
     loop: true,
     speed: 10000,
-    slidesPerView:1.5,
+    slidesPerView:1.9,
     centeredSlides: true
   });
 
