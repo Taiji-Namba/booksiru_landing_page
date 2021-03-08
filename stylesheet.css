@@ -180,7 +180,7 @@ main {
 
 .service-intro-container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto 90px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,7 +265,7 @@ main {
 
 .faq-container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
