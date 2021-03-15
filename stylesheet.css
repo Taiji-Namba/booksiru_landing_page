@@ -38,6 +38,14 @@ header {
   line-height: 5.6rem;
 }
 
+@media screen and (max-width: 520px) {
+  .header-wrapper .logo {
+    margin: 1rem auto 1rem 6vw;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+}
+
 .header-wrapper .logo a {
   text-decoration: none;
   color: #2cbae7;
@@ -47,12 +55,28 @@ header {
   float: right;
   margin-right: 3rem;
   line-height: 5.6rem;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 520px) {
+  .header-wrapper ul {
+    margin-right: 3vw;
+    line-height: 3.2rem;
+  }
 }
 
 .header-wrapper ul li {
   display: inline;
   padding-left: 40px;
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 520px) {
+  .header-wrapper ul li {
+    padding-left: 1vw;
+    margin-right: 3vw;
+    font-size: 1.2rem;
+  }
 }
 
 .header-wrapper ul li .signup {

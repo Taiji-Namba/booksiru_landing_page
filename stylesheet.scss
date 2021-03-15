@@ -56,6 +56,12 @@ header {
     margin: 1rem auto 1rem 3rem;
     font-size: 2.4rem;
     line-height: 5.6rem;
+    
+    @include mq() {
+      margin: 1rem auto 1rem 6vw;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+    }
 
     a {
       text-decoration: none;
@@ -67,11 +73,23 @@ header {
     float: right;
     margin-right: 3rem;
     line-height: 5.6rem;
+    padding-left: 0;
+
+    @include mq() {
+      margin-right: 3vw;
+      line-height: 3.2rem;
+    }
 
     li {
       display: inline;
       padding-left: 40px;
       font-size: 1.6rem;
+
+      @include mq() {
+        padding-left: 1vw;
+        margin-right: 3vw;
+        font-size: 1.2rem;
+      }
 
       .signup {
         color:$register-color;
