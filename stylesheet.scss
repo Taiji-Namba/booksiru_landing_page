@@ -1,6 +1,23 @@
+// カラーセット
 $main-color: #2cbae7;
 $text-color: #5b5b5b;
 $register-color: #fc9d9d;
+
+//タブレット,スマホ幅
+$layout-width-tab: 900px;
+$layout-width-sp: 520px;
+
+// ブレークポイント
+$breakpoints: (
+  "tab": "screen and (max-width: #{$layout-width-tab})",
+  "sp": "screen and (max-width: #{$layout-width-sp})",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
 
 *,
 *::before,
@@ -23,11 +40,11 @@ main {
   display: block;
 }
 
-.top {
+// ヘッダー
+header {
   position: relative;
 }
 
-// ヘッダー
 .header-wrapper {
   display: flex;
   width: 100%;
@@ -35,8 +52,8 @@ main {
   top: 0;
 
   .logo {
-    width: 180px;
-    margin: 10px auto 10px 10px;
+    // width: 18rem;
+    margin: 1rem auto 1rem 3rem;
     font-size: 2.4rem;
     line-height: 5.6rem;
 
@@ -48,7 +65,7 @@ main {
 
   ul {
     float: right;
-    margin-right: 30px;
+    margin-right: 3rem;
     line-height: 5.6rem;
 
     li {
