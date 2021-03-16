@@ -383,7 +383,7 @@ html.modalset {
     width: 40%;
 
     @include mq() {
-    width: 95%;
+    width: 60% !important;
     }
   }
 
@@ -404,7 +404,6 @@ html.modalset {
     min-width: 35%;
 
     @include mq() {
-      width: 95%;
       max-width: 95%;
     }
   }
@@ -431,6 +430,10 @@ html.modalset {
   max-width: 1050px;
   margin: 0 auto;
 
+  @include mq() {
+  margin: 120px auto 0 auto;
+  }
+
   h2 {
     font-size: 4rem;
     margin: 0 0 10px 0;
@@ -447,9 +450,13 @@ html.modalset {
 }
 
 .faq-list {
-  margin: 0.25em 2.5%;
+  margin: 0.25em auto;
   max-width: 815px;
   padding-left: 0;
+
+  @include mq() {
+  margin: 0.25rem 2.5%;
+  }
 
   &__item {
     list-style: none;
