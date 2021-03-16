@@ -307,6 +307,9 @@ html.modalset {
   }
 
   h2 {
+    margin-top: -10px;
+    margin-left: -1%;
+    display: inline-block;
     font-size: 4rem;
 
     @include mq(tab) {
@@ -315,13 +318,16 @@ html.modalset {
 
     @include mq() {
     font-size: 2.0rem;
+    margin: 0;
     }
   }
 
   p {
     font-size: 2.4rem;
     margin-top: 1.5rem;
+    margin-left: -0.5%;
     line-height: 4rem;
+    display: inline-block;
 
     @include mq(tab) {
     font-size: 2.0rem;
@@ -331,6 +337,7 @@ html.modalset {
     @include mq() {
     font-size: 1.6rem;
     line-height: 2.8rem;
+    margin: 0 auto 0 auto;
     }
   }
 
@@ -341,22 +348,7 @@ html.modalset {
     @include mq() {
     width: 95%;
     text-align: center;
-    margin-bottom: 20px !important;
-    }
-
-    h2 {
-      margin-top: -10px;
-      margin-left: -1%;
-      display: inline-block;
-
-      @include mq() {
-      margin: 0;
-      }
-    }
-
-    p {
-      margin-left: -0.5%;
-      display: inline-block;
+    margin-bottom: 10px !important;
     }
 
     span.beginning-is-key-bracket {
