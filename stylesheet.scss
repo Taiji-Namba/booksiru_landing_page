@@ -29,7 +29,7 @@ $breakpoints: (
 html {
   margin: 0px;
   text-align: center;
-  background-color: #F6FBFF;
+  background-color: #f6fbff;
   color: $text-color;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -56,7 +56,7 @@ header {
     margin: 1rem auto 1rem 3rem;
     font-size: 2.4rem;
     line-height: 5.6rem;
-    
+
     @include mq() {
       margin: 1rem auto 1rem 6vw;
       font-size: 1.6rem;
@@ -92,7 +92,7 @@ header {
       }
 
       .signup {
-        color:$register-color;
+        color: $register-color;
       }
 
       a {
@@ -106,43 +106,66 @@ header {
 }
 
 // モーダル
-.modal-wrapper {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(#24140e, 0.5);
-  z-index: 100;
-  display: none;
-
-  &__bg {
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-  }
+html.modalset {
+  overflow: hidden;
 }
 
 .modal {
-  position: absolute;
-  top: 20%;
-  left: 34%;
-  background-color: #ffffff;
-  padding: 20px 50px 40px;
-  border-radius: 5px;
-  width: 530px;
-  height: auto;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
   text-align: center;
+  padding: 20px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  white-space: nowrap;
 
-
-  form {
-    width: 80%;
-    margin: 0 auto;
+  &::-webkit-scrollbar {
+    display: none;
   }
 
-  .bold {
-    font-weight: bold;
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 100%;
   }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(51, 51, 51, 0.8);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__box {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 2px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    white-space: normal;
+  }
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .terms-of-service {
@@ -152,9 +175,9 @@ header {
 
 .close-icon {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 4%;
+  top: 20px;
+  right: 20px;
+  width: 3%;
   cursor: pointer;
 }
 
@@ -165,27 +188,39 @@ header {
 
   h2 {
     letter-spacing: 1px;
-    margin-bottom: 40px;
+    margin: 40px auto 40px 14.5%;
     font-size: 2.4rem;
+    text-align: left;
+  }
+
+  form {
+    width: 70%;
+    margin: 0 auto;
   }
 
   input {
-    width: 320px;
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 auto 2rem auto;
     padding: 12px 12px;
     border: 1px solid #d0d5d8;
-    border-radius: 5px;
+    display: block;
+  }
+
+  p {
+    margin: 20px 0 20px -1px;
+    width: 100%;
+    text-align: left;
   }
 }
 
 .submit-btn {
   display: inline-block;
-  padding: 14px 15%;
+  width: 100%;
+  padding: 14px;
+  margin: 10px auto 32px auto;
   background-color: $register-color;
   border: none;
-  border-radius: 3px;
   color: white;
-  margin: 10px auto;
   cursor: pointer;
 }
 
@@ -299,7 +334,6 @@ header {
 // よくある質問
 .wrapper {
   margin: 50px 0 0 0;
-
 }
 
 .faq-container {
@@ -313,13 +347,12 @@ header {
   }
 
   p {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
-
 }
 
 .faq-list {
-  margin: .25em auto;
+  margin: 0.25em auto;
   max-width: 815px;
   padding-left: 0;
 
@@ -337,7 +370,7 @@ header {
       text-align: left;
       font-size: 2.4rem;
       color: $text-color;
-      background-color: #D5EEFF;
+      background-color: #d5eeff;
       cursor: pointer;
       outline: none;
     }
@@ -345,8 +378,8 @@ header {
     .faq-answer {
       text-align: left;
       padding: 1rem 0rem 1rem 1.25rem;
-      display:none;
-      background-color: #D5EEFF;
+      display: none;
+      background-color: #d5eeff;
       cursor: pointer;
     }
 
@@ -388,16 +421,16 @@ button.btn {
   text-decoration: none;
   letter-spacing: 0.1em;
   color: #212529;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 a.btn-flat {
   overflow: hidden;
   padding: 1.5rem 11rem;
   color: #fff;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   background: $register-color;
-  position:relative;
+  position: relative;
   text-decoration: none;
 
   span {
@@ -411,9 +444,9 @@ a.btn-flat {
     left: 0.3vh;
     width: 120%;
     height: 500%;
-    content: '';
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    content: "";
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-70%) rotate(135deg);
     transform: translateX(-98%) translateY(-70%) rotate(135deg);
     background: $main-color;
@@ -437,7 +470,7 @@ footer {
     li {
       display: inline-block;
       font-size: 1.4rem;
-      letter-spacing: .08em;
+      letter-spacing: 0.08em;
       list-style: none;
 
       a {
@@ -456,5 +489,4 @@ footer {
   p {
     font-size: 1.2rem;
   }
-
 }

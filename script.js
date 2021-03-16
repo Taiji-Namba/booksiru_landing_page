@@ -2,15 +2,18 @@ $(function() {
   // モーダル
   $('.js-signup-show').click(function(){
     $('#signup-modal').fadeIn();
+    $('html').addClass("modalset");
   });
 
   $('#login-show').click(function(){
     $('#login-modal').fadeIn();
+    $('html').addClass("modalset");
   });
 
   $('.js-modal-close').click(function(){
     $('#login-modal').fadeOut();
     $('#signup-modal').fadeOut();
+    $('html').removeClass('modalset');
   });
 
   // スライダーメニュー
