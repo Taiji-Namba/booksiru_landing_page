@@ -434,15 +434,20 @@ html.modalset {
   h2 {
     font-size: 4rem;
     margin: 0 0 10px 0;
-  }
 
-  p {
-    font-size: 2rem;
+    @include mq(tab) {
+    font-size: 3.2rem;
+    }
+
+    @include mq() {
+    font-size: 2.4rem;
+    margin: 0;
+    }
   }
 }
 
 .faq-list {
-  margin: 0.25em auto;
+  margin: 0.25em 2.5%;
   max-width: 815px;
   padding-left: 0;
 
@@ -463,14 +468,39 @@ html.modalset {
       background-color: #d5eeff;
       cursor: pointer;
       outline: none;
+
+      @include mq(tab) {
+        font-size: 2.0rem;
+        line-height: 3.6rem;
+        }
+
+      @include mq() {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        margin: 0 auto 0 auto;
+      }
     }
 
     .faq-answer {
-      text-align: left;
-      padding: 1rem 0rem 1rem 1.25rem;
-      display: none;
-      background-color: #d5eeff;
-      cursor: pointer;
+        text-align: left;
+        padding: 1rem 0rem 1rem 1.25rem;
+        display: none;
+        background-color: #d5eeff;
+        cursor: pointer;
+        font-size: 2rem;
+
+      @include mq(tab) {
+        font-size: 2.0rem;
+        line-height: 3.6rem;
+        }
+
+      @include mq() {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        margin: 0 auto;
+        padding-right: 1.6rem;
+
+      }
     }
 
     .svg-icon {
