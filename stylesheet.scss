@@ -455,7 +455,7 @@ html.modalset {
   padding-left: 0;
 
   @include mq() {
-  margin: 0.25rem 2.5%;
+  margin: 0.25rem 0;
   }
 
   &__item {
@@ -559,6 +559,11 @@ a.btn-flat {
   background: $register-color;
   position: relative;
   text-decoration: none;
+
+  @include mq() {
+  width: 90%;
+  padding: 1.2rem 0;
+  }
 
   span {
     position: relative;

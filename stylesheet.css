@@ -509,7 +509,7 @@ html.modalset {
 
 @media screen and (max-width: 520px) {
   .faq-list {
-    margin: 0.25rem 2.5%;
+    margin: 0.25rem 0;
   }
 }
 
@@ -621,6 +621,13 @@ a.btn-flat {
   background: #fc9d9d;
   position: relative;
   text-decoration: none;
+}
+
+@media screen and (max-width: 520px) {
+  a.btn-flat {
+    width: 90%;
+    padding: 1.2rem 0;
+  }
 }
 
 a.btn-flat span {
