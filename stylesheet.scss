@@ -481,7 +481,7 @@ html.modalset {
       cursor: pointer;
     }
 
-    .svg-icon-thin-x {
+    .svg-icon {
       position: absolute;
       right: 1rem;
       top: 50%;
@@ -491,7 +491,7 @@ html.modalset {
       fill: $text-color;
     }
 
-    .svg-closed {
+    .svg-open {
       transform: translateY(-50%) rotate(-45deg);
     }
   }

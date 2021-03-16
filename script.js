@@ -31,7 +31,7 @@ $(function() {
   // アコーディオンメニュー
   $('.faq-list__item').on('click', function () {
     let $answer = $(this).find('.faq-answer');
-    let $svg = $(this).find('svg');
+    let $svg = $(this).find('img');
 
     if ($answer.hasClass('open')) {
       $answer.removeClass('open');

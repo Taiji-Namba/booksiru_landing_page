@@ -531,7 +531,7 @@ html.modalset {
   cursor: pointer;
 }
 
-.faq-list__item .svg-icon-thin-x {
+.faq-list__item .svg-icon {
   position: absolute;
   right: 1rem;
   top: 50%;
@@ -542,7 +542,7 @@ html.modalset {
   fill: #5b5b5b;
 }
 
-.faq-list__item .svg-closed {
+.faq-list__item .svg-open {
   -webkit-transform: translateY(-50%) rotate(-45deg);
           transform: translateY(-50%) rotate(-45deg);
 }
