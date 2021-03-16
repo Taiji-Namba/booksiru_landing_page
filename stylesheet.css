@@ -483,12 +483,21 @@ html.modalset {
   margin: 0 0 10px 0;
 }
 
-.faq-container p {
-  font-size: 2rem;
+@media screen and (max-width: 900px) {
+  .faq-container h2 {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .faq-container h2 {
+    font-size: 2.4rem;
+    margin: 0;
+  }
 }
 
 .faq-list {
-  margin: 0.25em auto;
+  margin: 0.25em 2.5%;
   max-width: 815px;
   padding-left: 0;
 }
@@ -513,12 +522,44 @@ html.modalset {
   outline: none;
 }
 
+@media screen and (max-width: 900px) {
+  .faq-list__item .faq-question {
+    font-size: 2.0rem;
+    line-height: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .faq-list__item .faq-question {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin: 0 auto 0 auto;
+  }
+}
+
 .faq-list__item .faq-answer {
   text-align: left;
   padding: 1rem 0rem 1rem 1.25rem;
   display: none;
   background-color: #d5eeff;
   cursor: pointer;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .faq-list__item .faq-answer {
+    font-size: 2.0rem;
+    line-height: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .faq-list__item .faq-answer {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin: 0 auto;
+    padding-right: 1.6rem;
+  }
 }
 
 .faq-list__item .svg-icon {
