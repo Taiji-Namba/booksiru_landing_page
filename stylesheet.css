@@ -341,6 +341,7 @@ html.modalset {
   .service-intro-container h2 {
     font-size: 2.4rem;
     margin: 0;
+    display: block;
   }
 }
 
@@ -364,6 +365,7 @@ html.modalset {
     font-size: 1.6rem;
     line-height: 2.8rem;
     margin: 0 auto 0 auto;
+    display: block;
   }
 }
 
