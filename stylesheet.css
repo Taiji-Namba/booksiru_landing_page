@@ -302,6 +302,27 @@ html.modalset {
           justify-content: space-between;
 }
 
+.service-intro-container h2 {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 900px) {
+  .service-intro-container h2 {
+    font-size: 3.2rem;
+  }
+}
+
+.service-intro-container p {
+  font-size: 2.4rem;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .service-intro-container p {
+    font-size: 2.0rem;
+  }
+}
+
 .service-intro-container__text--left {
   text-align: left;
   width: 50%;
@@ -312,15 +333,12 @@ html.modalset {
   margin-left: -1%;
   display: inline-block;
   text-align: left;
-  font-size: 4rem;
 }
 
 .service-intro-container__text--left p {
-  margin-top: 0;
   margin-left: -0.5%;
   display: inline-block;
   text-align: left;
-  font-size: 2.4rem;
 }
 
 .service-intro-container__text--left span.beginning-is-key-bracket {
@@ -334,14 +352,14 @@ html.modalset {
   margin-right: -1rem;
 }
 
-.service-intro-container__text--right h2 {
-  margin-top: -10px;
-  font-size: 4rem;
+@media screen and (max-width: 900px) {
+  .service-intro-container__text--right {
+    width: 40rem;
+  }
 }
 
-.service-intro-container__text--right p {
-  margin-top: 0;
-  font-size: 2.4rem;
+.service-intro-container__text--right h2 {
+  margin-top: -10px;
 }
 
 .service-intro-container__image {
@@ -356,6 +374,12 @@ html.modalset {
 .service-intro-container__image#img1 .swiper-slide img {
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+.service-intro-container #img2 {
+  width: calc(100% - 40rem);
+  max-width: 40%;
+  min-width: 35%;
 }
 
 .service-intro-container .service-intro-container__image--picture {

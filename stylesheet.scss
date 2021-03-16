@@ -295,6 +295,23 @@ html.modalset {
   align-items: flex-start;
   justify-content: space-between;
 
+  h2 {
+    font-size: 4rem;
+
+    @include mq(tab) {
+    font-size: 3.2rem;
+    }
+  }
+
+  p {
+    font-size: 2.4rem;
+    margin-top: 0;
+
+    @include mq(tab) {
+    font-size: 2.0rem;
+    }
+  }
+
   &__text--left {
     text-align: left;
     width: 50%;
@@ -304,15 +321,14 @@ html.modalset {
       margin-left: -1%;
       display: inline-block;
       text-align: left;
-      font-size: 4rem;
+
     }
 
     p {
-      margin-top: 0;
       margin-left: -0.5%;
       display: inline-block;
       text-align: left;
-      font-size: 2.4rem;
+
     }
 
     span.beginning-is-key-bracket {
@@ -326,13 +342,12 @@ html.modalset {
     text-align: left;
     margin-right: -1rem;
 
+    @include mq(tab) {
+    width: 40rem;
+    }
+
     h2 {
       margin-top: -10px;
-      font-size: 4rem;
-    }
-    p {
-      margin-top: 0;
-      font-size: 2.4rem;
     }
   }
 
@@ -349,6 +364,12 @@ html.modalset {
         object-fit: fill;
       }
     }
+  }
+
+  #img2 {
+    width: calc(100% - 40rem);
+    max-width: 40%;
+    min-width: 35%;
   }
 
   .service-intro-container__image--picture {
