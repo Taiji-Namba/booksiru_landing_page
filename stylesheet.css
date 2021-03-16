@@ -659,15 +659,43 @@ footer {
   margin: 80px 0 10px 0;
 }
 
+@media screen and (max-width: 900px) {
+  footer {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
 footer .footer-nav {
   margin-bottom: 15px;
 }
 
+footer .footer-nav ul {
+  padding: 0;
+}
+
+@media screen and (max-width: 520px) {
+  footer .footer-nav ul {
+    text-align: left;
+    padding: 0 5% 0 5%;
+  }
+}
+
 footer .footer-nav li {
   display: inline-block;
-  font-size: 1.4rem;
   letter-spacing: 0.08em;
   list-style: none;
+}
+
+@media screen and (max-width: 520px) {
+  footer .footer-nav li {
+    line-height: 2;
+  }
 }
 
 footer .footer-nav li a {
@@ -680,7 +708,25 @@ footer .footer-nav li a::after {
   margin: 0 1.8rem;
 }
 
+@media screen and (max-width: 900px) {
+  footer .footer-nav li a::after {
+    margin: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  footer .footer-nav li a::after {
+    margin: 0 0.8rem;
+  }
+}
+
 footer p {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 520px) {
+  footer p {
+    font-size: 0.8rem;
+  }
 }
 /*# sourceMappingURL=stylesheet.css.map */
