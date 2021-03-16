@@ -310,7 +310,7 @@ html.modalset {
 
 @media screen and (max-width: 520px) {
   .service-intro-container {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

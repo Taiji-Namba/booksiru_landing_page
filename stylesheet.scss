@@ -300,7 +300,7 @@ html.modalset {
   justify-content: space-between;
 
   @include mq() {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
