@@ -648,5 +648,9 @@ footer {
   // 著作権表示
   p {
     font-size: 1.2rem;
+
+    @include mq() {
+      font-size: 0.8rem;
+    }
   }
 }
