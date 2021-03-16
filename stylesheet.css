@@ -325,6 +325,9 @@ html.modalset {
 }
 
 .service-intro-container h2 {
+  margin-top: -10px;
+  margin-left: -1%;
+  display: inline-block;
   font-size: 4rem;
 }
 
@@ -337,13 +340,16 @@ html.modalset {
 @media screen and (max-width: 520px) {
   .service-intro-container h2 {
     font-size: 2.0rem;
+    margin: 0;
   }
 }
 
 .service-intro-container p {
   font-size: 2.4rem;
   margin-top: 1.5rem;
+  margin-left: -0.5%;
   line-height: 4rem;
+  display: inline-block;
 }
 
 @media screen and (max-width: 900px) {
@@ -357,6 +363,7 @@ html.modalset {
   .service-intro-container p {
     font-size: 1.6rem;
     line-height: 2.8rem;
+    margin: 0 auto 0 auto;
   }
 }
 
@@ -369,25 +376,8 @@ html.modalset {
   .service-intro-container__text {
     width: 95%;
     text-align: center;
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
   }
-}
-
-.service-intro-container__text h2 {
-  margin-top: -10px;
-  margin-left: -1%;
-  display: inline-block;
-}
-
-@media screen and (max-width: 520px) {
-  .service-intro-container__text h2 {
-    margin: 0;
-  }
-}
-
-.service-intro-container__text p {
-  margin-left: -0.5%;
-  display: inline-block;
 }
 
 .service-intro-container__text span.beginning-is-key-bracket {
