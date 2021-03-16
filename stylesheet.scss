@@ -284,35 +284,79 @@ html.modalset {
 // サービス紹介
 .wrapper {
   margin: 50px 0;
+
+  @include mq() {
+    margin: 20px 0;
+  }
 }
 
 .service-intro-container {
-  width: 90%;
+  width: 90vw;
   max-width: 1050px;
   margin: 0 auto 120px auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
 
-  &__text--left {
+  @include mq() {
+    margin-bottom: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 4rem;
+
+    @include mq(tab) {
+    font-size: 3.2rem;
+    }
+
+    @include mq() {
+    font-size: 2.0rem;
+    }
+  }
+
+  p {
+    font-size: 2.4rem;
+    margin-top: 1.5rem;
+    line-height: 4rem;
+
+    @include mq(tab) {
+    font-size: 2.0rem;
+    line-height: 3.6rem;
+    }
+
+    @include mq() {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    }
+  }
+
+  &__text {
     text-align: left;
     width: 50%;
+
+    @include mq() {
+    width: 95%;
+    text-align: center;
+    margin-bottom: 20px !important;
+    }
 
     h2 {
       margin-top: -10px;
       margin-left: -1%;
       display: inline-block;
-      text-align: left;
-      font-size: 4rem;
+
+      @include mq() {
+      margin: 0;
+      }
     }
 
     p {
-      margin-top: 0;
       margin-left: -0.5%;
       display: inline-block;
-      text-align: left;
-      font-size: 2.4rem;
     }
 
     span.beginning-is-key-bracket {
@@ -321,23 +365,34 @@ html.modalset {
     }
   }
 
-  &__text--right {
+  #txt2 {
     width: 48rem;
-    text-align: left;
     margin-right: -1rem;
+
+    @include mq(tab) {
+      width: 40rem;
+    }
+
+    @include mq() {
+      width: auto;
+      margin: auto;
+    }
 
     h2 {
       margin-top: -10px;
-      font-size: 4rem;
-    }
-    p {
-      margin-top: 0;
-      font-size: 2.4rem;
+
+      @include mq() {
+        margin-top: 0;
+      }
     }
   }
 
   &__image {
     width: 40%;
+
+    @include mq() {
+    width: 95%;
+    }
   }
 
   &__image#img1 {
@@ -351,18 +406,34 @@ html.modalset {
     }
   }
 
+  #img2 {
+    width: calc(100% - 40rem);
+    max-width: 40%;
+    min-width: 35%;
+
+    @include mq() {
+      width: 95%;
+      max-width: 95%;
+    }
+  }
+
   .service-intro-container__image--picture {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+
+    @include mq() {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
 
 // よくある質問
-.wrapper {
-  margin: 50px 0 0 0;
-}
-
 .faq-container {
   width: 90%;
   max-width: 1050px;
