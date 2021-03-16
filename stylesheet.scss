@@ -262,7 +262,7 @@ html.modalset {
     }
 
     @include mq () {
-      font-size: 2.4rem;
+      font-size: 2.8rem;
     }
   }
 
@@ -272,7 +272,11 @@ html.modalset {
     font-size: 2.4rem;
 
     @include mq(tab) {
-      font-size: 1.2rem;
+      font-size: 2.0rem;
+    }
+
+    @include mq() {
+      font-size: 1.6rem;
     }
   }
 }
