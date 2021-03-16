@@ -281,12 +281,12 @@ html.modalset {
   }
 }
 
-.wrapper {
+.service-intro-wrapper {
   margin: 50px 0;
 }
 
 @media screen and (max-width: 520px) {
-  .wrapper {
+  .service-intro-wrapper {
     margin: 20px 0;
   }
 }
@@ -468,6 +468,16 @@ html.modalset {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+.faq-wrapper {
+  margin: 0 0 90px 0;
+}
+
+@media screen and (max-width: 520px) {
+  .faq-wrapper {
+    margin-bottom: 50px;
   }
 }
 
