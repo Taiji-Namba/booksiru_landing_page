@@ -666,7 +666,10 @@ a.btn-flat:hover::before {
 
 footer {
   font-size: 1.4rem;
-  margin: 80px 0 10px 0;
+  padding: 20px 0;
+  margin: 80px 0 0 0;
+  background-color: #2cbae7;
+  color: #fff;
 }
 
 @media screen and (max-width: 900px) {
@@ -678,6 +681,7 @@ footer {
 @media screen and (max-width: 520px) {
   footer {
     font-size: 1.2rem;
+    padding: 5px 0;
   }
 }
 
@@ -710,7 +714,7 @@ footer .footer-nav li {
 
 footer .footer-nav li a {
   text-decoration: none;
-  color: #5b5b5b;
+  color: #fff;
 }
 
 footer .footer-nav li a::after {
