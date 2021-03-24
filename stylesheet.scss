@@ -4,7 +4,7 @@ $text-color: #5b5b5b;
 $register-color: #fc9d9d;
 
 //タブレット,スマホ幅
-$layout-width-tab: 900px;
+$layout-width-tab: 960px;
 $layout-width-sp: 520px;
 
 // ブレークポイント
@@ -231,14 +231,13 @@ html.modalset {
   background-image: url(img/top-image.jpg);
   background-size: cover;
 
-  @include mq (tab) {
-    height: 50vh;
-  }
-  
-  @include mq () {
+  @include mq(tab) {
     height: 50vh;
   }
 
+  @include mq() {
+    height: 50vh;
+  }
 }
 
 .top-message {
@@ -248,7 +247,7 @@ html.modalset {
   right: 0;
   margin: auto;
 
-  @include mq (tab) {
+  @include mq(tab) {
     top: 20%;
   }
 
@@ -257,11 +256,11 @@ html.modalset {
     font-size: 4.8rem;
     margin: 0;
 
-    @include mq (tab) {
-      font-size: 4.0rem;
+    @include mq(tab) {
+      font-size: 4rem;
     }
 
-    @include mq () {
+    @include mq() {
       font-size: 2.8rem;
     }
   }
@@ -272,7 +271,7 @@ html.modalset {
     font-size: 2.4rem;
 
     @include mq(tab) {
-      font-size: 2.0rem;
+      font-size: 2rem;
     }
 
     @include mq() {
@@ -313,13 +312,13 @@ html.modalset {
     font-size: 4rem;
 
     @include mq(tab) {
-    font-size: 3.2rem;
+      font-size: 3.2rem;
     }
 
     @include mq() {
-    font-size: 2.4rem;
-    margin: 0;
-    display: block;
+      font-size: 2.4rem;
+      margin: 0;
+      display: block;
     }
   }
 
@@ -331,15 +330,15 @@ html.modalset {
     display: inline-block;
 
     @include mq(tab) {
-    font-size: 2.0rem;
-    line-height: 3.6rem;
+      font-size: 2rem;
+      line-height: 3.6rem;
     }
 
     @include mq() {
-    font-size: 1.6rem;
-    line-height: 2.8rem;
-    margin: 0 auto 0 auto;
-    display: block;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      margin: 0 auto 0 auto;
+      display: block;
     }
   }
 
@@ -348,9 +347,9 @@ html.modalset {
     width: 50%;
 
     @include mq() {
-    width: 95%;
-    text-align: center;
-    margin-bottom: 10px !important;
+      width: 95%;
+      text-align: center;
+      margin-bottom: 10px !important;
     }
 
     span.beginning-is-key-bracket {
@@ -385,7 +384,7 @@ html.modalset {
     width: 40%;
 
     @include mq() {
-    width: 60% !important;
+      width: 60% !important;
     }
   }
 
@@ -433,7 +432,6 @@ html.modalset {
   @include mq() {
     margin-bottom: 50px;
   }
-
 }
 
 .faq-container {
@@ -442,7 +440,7 @@ html.modalset {
   margin: 0 auto;
 
   @include mq() {
-  margin: 120px auto 0 auto;
+    margin: 120px auto 0 auto;
   }
 
   h2 {
@@ -450,12 +448,12 @@ html.modalset {
     margin: 0 0 10px 0;
 
     @include mq(tab) {
-    font-size: 3.2rem;
+      font-size: 3.2rem;
     }
 
     @include mq() {
-    font-size: 2.4rem;
-    margin: 0;
+      font-size: 2.4rem;
+      margin: 0;
     }
   }
 }
@@ -466,7 +464,7 @@ html.modalset {
   padding-left: 0;
 
   @include mq() {
-  margin: 0.25rem 0;
+    margin: 0.25rem 0;
   }
 
   &__item {
@@ -488,9 +486,9 @@ html.modalset {
       outline: none;
 
       @include mq(tab) {
-        font-size: 2.0rem;
+        font-size: 2rem;
         line-height: 3.6rem;
-        }
+      }
 
       @include mq() {
         font-size: 1.6rem;
@@ -500,24 +498,23 @@ html.modalset {
     }
 
     .faq-answer {
-        text-align: left;
-        padding: 1rem 0rem 1rem 1.25rem;
-        display: none;
-        background-color: #d5eeff;
-        cursor: pointer;
-        font-size: 2rem;
+      text-align: left;
+      padding: 1rem 0rem 1rem 1.25rem;
+      display: none;
+      background-color: #d5eeff;
+      cursor: pointer;
+      font-size: 2rem;
 
       @include mq(tab) {
-        font-size: 2.0rem;
+        font-size: 2rem;
         line-height: 3.6rem;
-        }
+      }
 
       @include mq() {
         font-size: 1.6rem;
         line-height: 2.8rem;
         margin: 0 auto;
         padding-right: 1.6rem;
-
       }
     }
 
@@ -572,8 +569,8 @@ a.btn-flat {
   text-decoration: none;
 
   @include mq() {
-  width: 90%;
-  padding: 1.2rem 0;
+    width: 90%;
+    padding: 1.2rem 0;
   }
 
   span {
@@ -604,7 +601,7 @@ a.btn-flat {
 // フッター
 footer {
   font-size: 1.4rem;
-  padding:20px 0;
+  padding: 20px 0;
   margin: 80px 0 0 0;
   background-color: $main-color;
   color: #fff;
@@ -653,7 +650,7 @@ footer {
           }
 
           @include mq() {
-          margin: 0 0.8rem;
+            margin: 0 0.8rem;
           }
         }
       }
