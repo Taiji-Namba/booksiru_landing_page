@@ -427,7 +427,7 @@ html.modalset {
 
 // よくある質問
 .faq-wrapper {
-  margin: 0 0 90px 0;
+  margin: 0 0 80px 0;
 
   @include mq() {
     margin-bottom: 50px;
@@ -493,7 +493,7 @@ html.modalset {
       @include mq() {
         font-size: 1.6rem;
         line-height: 2.8rem;
-        margin: 0 auto 0 auto;
+        margin: 0 auto 2px auto;
       }
     }
 
@@ -613,6 +613,7 @@ footer {
   @include mq() {
     font-size: 1.2rem;
     padding: 5px 0;
+    margin: 50px 0 0 0;
   }
 
   // フッターナビ

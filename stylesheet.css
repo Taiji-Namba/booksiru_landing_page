@@ -474,7 +474,7 @@ html.modalset {
 }
 
 .faq-wrapper {
-  margin: 0 0 90px 0;
+  margin: 0 0 80px 0;
 }
 
 @media screen and (max-width: 520px) {
@@ -556,7 +556,7 @@ html.modalset {
   .faq-list__item .faq-question {
     font-size: 1.6rem;
     line-height: 2.8rem;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 2px auto;
   }
 }
 
@@ -684,6 +684,7 @@ footer {
   footer {
     font-size: 1.2rem;
     padding: 5px 0;
+    margin: 50px 0 0 0;
   }
 }
 
