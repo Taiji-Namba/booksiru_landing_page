@@ -80,7 +80,7 @@ header {
 }
 
 .header-wrapper ul li .signup {
-  color: #fc9d9d;
+  color: #06d6a0;
 }
 
 .header-wrapper ul li a {
@@ -206,7 +206,7 @@ html.modalset {
   width: 100%;
   padding: 14px;
   margin: 10px auto 32px auto;
-  background-color: #fc9d9d;
+  background-color: #06d6a0;
   border: none;
   color: white;
   cursor: pointer;
@@ -630,7 +630,7 @@ a.btn-flat {
   padding: 1.5rem 11rem;
   color: #fff;
   border-radius: 0.25rem;
-  background: #fc9d9d;
+  background: #06d6a0;
   position: relative;
   text-decoration: none;
 }
