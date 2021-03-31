@@ -8,7 +8,7 @@
 html {
   margin: 0px;
   text-align: center;
-  background-color: #f6fbff;
+  background-color: #F5F5F5;
   color: #5b5b5b;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -48,7 +48,7 @@ header {
 
 .header-wrapper .logo a {
   text-decoration: none;
-  color: #2cbae7;
+  color: #5b5b5b;
 }
 
 .header-wrapper ul {
@@ -85,7 +85,7 @@ header {
 
 .header-wrapper ul li a {
   text-decoration: none;
-  color: #2cbae7;
+  color: #5b5b5b;
   cursor: pointer;
   font-weight: bold;
 }
@@ -233,7 +233,7 @@ html.modalset {
 
 .top-message {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 0;
   right: 0;
   margin: auto;
@@ -246,7 +246,7 @@ html.modalset {
 }
 
 .top-message h1 {
-  color: #2cbae7;
+  color: #5b5b5b;
   font-size: 4.8rem;
   margin: 0;
 }
@@ -264,7 +264,7 @@ html.modalset {
 }
 
 .top-message h2 {
-  color: #2cbae7;
+  color: #5b5b5b;
   margin: 0;
   font-size: 2.4rem;
 }
@@ -362,7 +362,7 @@ html.modalset {
 
 @media screen and (max-width: 520px) {
   .service-intro-container p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2.8rem;
     margin: 0 auto 0 auto;
     display: block;
@@ -540,7 +540,7 @@ html.modalset {
   text-align: left;
   font-size: 2.4rem;
   color: #5b5b5b;
-  background-color: #d5eeff;
+  background-color: #DDDBDB;
   cursor: pointer;
   outline: none;
 }
@@ -554,8 +554,8 @@ html.modalset {
 
 @media screen and (max-width: 520px) {
   .faq-list__item .faq-question {
-    font-size: 1.6rem;
-    line-height: 2.8rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     margin: 0 auto 2px auto;
   }
 }
@@ -564,7 +564,7 @@ html.modalset {
   text-align: left;
   padding: 1rem 0rem 1rem 1.25rem;
   display: none;
-  background-color: #d5eeff;
+  background-color: #DDDBDB;
   cursor: pointer;
   font-size: 2rem;
 }
@@ -578,8 +578,8 @@ html.modalset {
 
 @media screen and (max-width: 520px) {
   .faq-list__item .faq-answer {
-    font-size: 1.6rem;
-    line-height: 2.8rem;
+    font-size: 1.4em;
+    line-height: 2.4rem;
     margin: 0 auto;
     padding-right: 1.6rem;
   }
@@ -657,8 +657,8 @@ a.btn-flat::before {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-70%) rotate(135deg);
-  transform: translateX(-98%) translateY(-70%) rotate(135deg);
-  background: #2cbae7;
+  transform: translateX(-70%) translateY(-70%) rotate(135deg);
+  background: #5b5b5b;
 }
 
 a.btn-flat:hover::before {
@@ -670,8 +670,8 @@ footer {
   font-size: 1.4rem;
   padding: 20px 0;
   margin: 80px 0 0 0;
-  background-color: #2cbae7;
-  color: #fff;
+  background-color: #DDDBDB;
+  color: #5b5b5b;
 }
 
 @media screen and (max-width: 960px) {
@@ -717,7 +717,7 @@ footer .footer-nav li {
 
 footer .footer-nav li a {
   text-decoration: none;
-  color: #fff;
+  color: #5b5b5b;
 }
 
 footer .footer-nav li a::after {

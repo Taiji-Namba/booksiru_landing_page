@@ -1,5 +1,5 @@
 // カラーセット
-$main-color: #2cbae7;
+$main-color: #5b5b5b;
 $text-color: #5b5b5b;
 $register-color: #fc9d9d;
 
@@ -29,7 +29,7 @@ $breakpoints: (
 html {
   margin: 0px;
   text-align: center;
-  background-color: #f6fbff;
+  background-color: #F5F5F5;
   color: $text-color;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -65,7 +65,7 @@ header {
 
     a {
       text-decoration: none;
-      color: $main-color;
+      color: $text-color;
     }
   }
 
@@ -97,7 +97,7 @@ header {
 
       a {
         text-decoration: none;
-        color: $main-color;
+        color: $text-color;
         cursor: pointer;
         font-weight: bold;
       }
@@ -242,7 +242,7 @@ html.modalset {
 
 .top-message {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 0;
   right: 0;
   margin: auto;
@@ -252,7 +252,7 @@ html.modalset {
   }
 
   h1 {
-    color: $main-color;
+    color: $text-color;
     font-size: 4.8rem;
     margin: 0;
 
@@ -266,7 +266,7 @@ html.modalset {
   }
 
   h2 {
-    color: $main-color;
+    color: $text-color;
     margin: 0;
     font-size: 2.4rem;
 
@@ -335,7 +335,7 @@ html.modalset {
     }
 
     @include mq() {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 2.8rem;
       margin: 0 auto 0 auto;
       display: block;
@@ -481,7 +481,7 @@ html.modalset {
       text-align: left;
       font-size: 2.4rem;
       color: $text-color;
-      background-color: #d5eeff;
+      background-color: #DDDBDB;
       cursor: pointer;
       outline: none;
 
@@ -491,8 +491,8 @@ html.modalset {
       }
 
       @include mq() {
-        font-size: 1.6rem;
-        line-height: 2.8rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
         margin: 0 auto 2px auto;
       }
     }
@@ -501,7 +501,7 @@ html.modalset {
       text-align: left;
       padding: 1rem 0rem 1rem 1.25rem;
       display: none;
-      background-color: #d5eeff;
+      background-color: #DDDBDB;
       cursor: pointer;
       font-size: 2rem;
 
@@ -511,8 +511,8 @@ html.modalset {
       }
 
       @include mq() {
-        font-size: 1.6rem;
-        line-height: 2.8rem;
+        font-size: 1.4em;
+        line-height: 2.4rem;
         margin: 0 auto;
         padding-right: 1.6rem;
       }
@@ -588,7 +588,7 @@ a.btn-flat {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-70%) rotate(135deg);
-    transform: translateX(-98%) translateY(-70%) rotate(135deg);
+    transform: translateX(-70%) translateY(-70%) rotate(135deg);
     background: $main-color;
   }
 
@@ -603,8 +603,8 @@ footer {
   font-size: 1.4rem;
   padding: 20px 0;
   margin: 80px 0 0 0;
-  background-color: $main-color;
-  color: #fff;
+  background-color: #DDDBDB;
+  color: $text-color;
 
   @include mq(tab) {
     font-size: 1.4rem;
@@ -640,7 +640,7 @@ footer {
 
       a {
         text-decoration: none;
-        color: #fff;
+        color: $text-color;
 
         &::after {
           content: "|";
